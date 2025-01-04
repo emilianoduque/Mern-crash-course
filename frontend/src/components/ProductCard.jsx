@@ -90,6 +90,9 @@ const ProductCard = ({product}) => {
             left="50%"
             transform="translate(-50%, -50%)"
             rounded="md">
+              <DialogHeader>
+                <DialogTitle>Product Features</DialogTitle>
+              </DialogHeader>
               <DialogBody pb="4">
                  <VStack wordSpacing={4}>
                     <Input placeholder="Product Name" name="name" value={updatedProduct.name} onChange={(e) => setUpdatedProduct({...updatedProduct, name: e.target.value}) }/>
